@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/Site.css" rel="stylesheet" />
+
+<div class="jumbotron">
+    <div id="carouselIndicators" class="carousel slide" data-ride="carousel" data-interval="4000">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox" style=" width:100%; height: 500px">
+            <div class="item active">
+                <img src="~/Image/Hiking_5.jpg" class="img-responsive">
+
+            </div>
+            <div class="item">
+                <img src="~/Image/Hiking_6.jfif" class="img-responsive">
+            </div>
+            <div class="item">
+                <img src="~/Image/Hiking_7.jpg" class="img-responsive">
+            </div>
+
+        </div>
+        <a href="#carouselIndicators" class="left carousel-control" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+
+        </a>
+        <a href="#carouselIndicators" class="right carousel-control" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+
+        </a>
+    </div>
+</div>
+
+<div>
+    <div>Search Products</div>
+    <div>
+        <input type="search" name="search" placeholder="Search your products" class="form-control" />
+        <div >
+            <button type="submit" class="searchBtn">
+
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="row container">
+    
+    <div class="col-md-3 col-sm-3 col-xs-6" style="margin-bottom: 8px">
+        <div class="thumbnail product-item" style="height: 300px">
+            <img class="img-responsive" title="Click to view product detail"
+                 style="cursor: pointer; height:160px;width:260px"
+                 src="~/Image/HikingBoots_1.jpg" />
+            <hr/>
+            <div class="caption">
+                <h5>Paradise Hiking Boots</h5>
+                <p>150.00</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#carouselIndicators").carousel();
+    });
+</script>
